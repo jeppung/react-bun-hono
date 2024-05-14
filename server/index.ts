@@ -1,6 +1,7 @@
+import { serve } from "bun";
 import app from "./src/app";
 
-Bun.serve({
+serve({
   fetch: app.fetch,
   port: process.env.PORT,
 });
